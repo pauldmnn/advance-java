@@ -70,7 +70,7 @@ const people = [
 
 // const candidates = students.filter(student => {
 //     let strongSkills = student.skills.filter(skill => skill.yrsExperience >=5);
-//     return strongSkills.lenght > 0
+//     return strongSkills.length > 0
 // })
 // console.log(candidates)
 
@@ -80,7 +80,7 @@ const people = [
 
 // const hasStrongSkills = student => {
 //     let strongSkills = student.skills.filter(skill => skill.yrsExperience >=5);
-//     return strongSkills.lenght > 0;
+//     return strongSkills.length > 0;
 // };
 // const candidates = students.filter(hasStrongSkills)
 // console.log(candidates)
@@ -89,9 +89,9 @@ const people = [
       //OPTION 3
 
 
-const has5yearsExp = skill => skill.yrsExperience >=5
-const hasStrongSkills = student => student.skills.filter(has5yearsExp).lenght > 0;
-const candidates = students.filter(hasStrongSkills)
-console.log(candidates)
+const has5yearsExp = skill => skill.yrsExperience >= 5;
+const hasStrongSkills = student => student.skills.filter(has5yearsExp).length > 0;
+const candidates = students.filter(hasStrongSkills);
+console.log(candidates);
 
 // It is easyer to read if you pass the callback function first and then pass it into the filter section 
